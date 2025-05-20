@@ -22,6 +22,16 @@ public class Player : MonoBehaviour
                 comp.Interact();
             }
         }
+
+        if(Input.GetKeyDown(KeyCode.I))
+        {
+            GameManager.Instance.OpenInventoryPanel();
+        }
+
+        if(Input.GetKeyDown(KeyCode.O))
+        {
+            GameManager.Instance.CloseInventoryPanel();
+        }
     }
 
 }
